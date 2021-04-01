@@ -1,0 +1,21 @@
+<HeadsetControlApp>:
+    Label:
+        id: bateria
+        font_size: '50sp'
+
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            id: estado
+            size_hint_y: 0.2
+            font_size: '30sp'
+
+        BoxLayout:
+            Button:
+                text: "ON"
+                font_size: '30sp'
+                on_press: root.enable_led()
+            Button:
+                font_size: '30sp'
+                text: "OFF"
+                on_press: root.disable_led()
